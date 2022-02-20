@@ -263,7 +263,6 @@ Navbar
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
 }
 .nav-center {
   width: 90vw;
@@ -282,6 +281,12 @@ Navbar
 .nav-links {
   display: flex;
   flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links {
+  height: 310px;
 }
 .nav-link {
   display: block;
@@ -303,4 +308,36 @@ Navbar
 .nav-logo {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    height: 6rem;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0;
+    margin-left: 1rem;
+    border-top: none;
+    font-size: 1rem;
+  }
+  .nav-center {
+    display: flex;
+  }
+  .nav-header {
+    margin: 2px;
+  }
+  .contact-link {
+    margin-left: auto;
+  }
 }
