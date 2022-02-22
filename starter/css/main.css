@@ -426,40 +426,36 @@ Navbar
 .list a:hover {
   color: var(--primary-500);
 }
-/* .list {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 1rem);
-  text-align: left;
-  margin-top: 0;
-  order: 1;
+@media screen and (min-width: 600px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+  }
+  .dish img {
+    height: 10rem;
+  }
 }
-.list h4 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+@media screen and (min-width: 800px) {
+  .recipe-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+    gap: 2rem;
+  }
+  .list {
+    order: 0;
+  }
+  .list-tags {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.list a {
-  color: #7e8692;
-  transition: var(--transition);
+@media screen and (min-width: 1150px) {
+  .menu {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
-.list a:hover {
-  color: #5851d8;
-}
-.menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  margin: 0 auto;
-}
-.dish {
-  display: block;
-}
-.dish img {
-  height: 6rem;
-  width: 8rem;
-} */
+
 /* 
 ##############
   footer
