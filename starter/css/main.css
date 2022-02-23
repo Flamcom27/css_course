@@ -263,6 +263,8 @@ Navbar
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90vw;
+  margin: 0 auto;
 }
 .nav-center {
   width: 90vw;
@@ -477,4 +479,55 @@ Navbar
 
 .footer_ a {
   color: rgb(140, 135, 207);
+}
+/* 
+##############
+  about page
+##############
+*/
+.about-page {
+  display: block;
+  width: 90vw;
+  min-height: calc(100vh - 8rem);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.about-img-block img {
+  overflow: hidden;
+  height: 19rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.35rem;
+  margin-bottom: 3rem;
+}
+.about-text-block h2 {
+  font-weight: 600;
+}
+.about-text-block {
+  margin-bottom: 2rem;
+}
+.about-menu {
+  text-align: center;
+}
+.menu-heading {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 925px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    /* height: 30rem; */
+  }
+  .about-img-block img {
+    height: 1fr;
+    margin-bottom: 0;
+    height: 22rem;
+  }
+  .about-text-block {
+    /* height: 50%; */
+    align-items: center;
+    justify-content: center;
+  }
 }
